@@ -12,7 +12,7 @@ div#interface {
     background-color:#ffffff;
     margin: -20px auto 10px auto;
     box-shadow: 0px 0px 10px rgba(0, 0, 0,.5);
-    padding: 10px;
+    padding: 40px;
 }
 
 p {
@@ -110,5 +110,26 @@ nav#menu a:hover {
     color :#ffffff;
     text-decoration: underline;
 }
+section#corpo {
+    display:block;
+    width: 500px;
+    float: left;
+    border-right: 1px solid #606060;
+    padding-right: 45px ;
+}
+aside#lateral {
+    display: block;
+    width: 500px;
+    float: right;
+}
+footer#rodape{
+    clear:both;
+    border-top: 1px solid #606060;
+}
+
+footer#rodape p {
+    text-align: center;
+}
+
 
 
