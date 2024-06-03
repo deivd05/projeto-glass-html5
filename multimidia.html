@@ -4,41 +4,54 @@
     <meta charset="UTF-8"/>
     <title>tudo sobre google glass</title>
     <link rel="stylesheet" type="text/css" href="css/estilo.css"/>
+    <link rel="stylesheet" type="text/css" href="css/media.css"/>
 </head> 
 <script src="javascript/funcoes.js"></script>
-
 <body>
 <div id="interface">
 
-    <header id="cabecalho">
+  <header id="cabecalho">
     <hgroup>
-    <h1>Google Glass</h1>
-    <h2>A revolução do Google está chegando</h2>
+       <h1>Google Glass</h1>
+       <h2>A revolução do Google está chegando</h2>
     </hgroup>
     
-    <img id="icone" src="imagens/glass-oculos-preto-peq.png">
-    <nav id="menu">
-    <h1>Menu principal</h1>
-    <ul type="disc">
-        <li onmouseover="mudafoto('imagens/home.png')" onmouseout="mudafoto('imagens/glass-oculos-preto-peq.png')"><a href="index.html">home</a></li>
-        <li onmouseover="mudafoto('imagens/especificacoes.png')" onmouseout="mudafoto('imagens/glass-oculos-preto-peq.png')"><a href="specs.html">Especificações</a></li> 
-        <li onmouseover="mudafoto('imagens/fotos.png')" onmouseout="mudafoto('imagens/glass-oculos-preto-peq.png')"><a href="Fotos.html">fotos</a></li>
-        <li onmouseover="mudafoto('imagens/multimidia.png')" onmouseout="mudafoto('imagens/glass-oculos-preto-peq.png')"><a href="multimidia.html">multimidia</a></li>
-        <li onmouseover="mudafoto('imagens/contato.png')" onmouseout="mudafoto('imagens/glass-oculos-preto-peq.png')"><a href="fale-conosco.html">fale conosco</a></li>
-    </ul>
-    </nav>
+      <img id="icone" src="imagens/multimidia.png">
+      <nav id="menu">
+        <h1>Menu principal</h1>
+        <ul type="disc">
+            <li onmouseover="mudafoto('imagens/home.png')" onmouseout="mudafoto('imagens/multimidia.png')"><a href="index.html">home</a></li>
+            <li onmouseover="mudafoto('imagens/especificacoes.png')" onmouseout="mudafoto('imagens/multimidia.png')"><a href="specs.html">Especificações</a></li> 
+            <li onmouseover="mudafoto('imagens/fotos.png')" onmouseout="mudafoto('imagens/multimidia.png')"><a href="Fotos.html">fotos</a></li>
+            <li onmouseover="mudafoto('imagens/multimidia.png')" onmouseout="mudafoto('imagens/multimidia.png')"><a href="multimidia.html">multimidia</a></li>
+            <li onmouseover="mudafoto('imagens/contato.png')" onmouseout="mudafoto('imagens/Multimídia.png')"><a href="fale-conosco.html">fale conosco</a></li>
+       </ul>
+      </nav>
     </header>
 
-Glass > Multimídia
-Sons e Vídeos
-por Deivd Bastos
-Atualizado em 20/05/2024
+    <section id="corpo-full" > 
+        <article id="noticia-principal">
+        <header id="cabecalho-artigo">
+            <hgroup>
+                <h3>Glass > Multimidia</h3>
+                <h1>Sons e Videos</h1>
+                <h2>por Deivd Bastos</h2>
+                <h3 class="direita">Atualizado em 20/maio/2024</h3>
+            </hgroup>
+        </header>
+        <div id="tv-radio">
+            <audio id="musica" controls="controls">
+                <source src="media/2009-lovers-carvings-bibio.mp3" type="audio/mpeg"/>
+            </audio>
+            <video id="filme" controls="controls">
+                <source src="media/getting-started.mp4" type="video/mp4"/>
+            </video>
+
+        </div>
+        </article>
+    </section>
 
 
-Áudio e Vídeo
-
-[AQUI ENTRA UM VÍDEO]
-[AQUI ENTRA UM ÁUDIO]
 
 <footer id="rodape">
     <p>Copyright 2024 &copy;- by Deivd Bastos</br>
@@ -46,3 +59,6 @@ Atualizado em 20/05/2024
     <a href="http:// globo.com.br" target="_blank">globo.com</a>
     </p>
     </footer>
+</div>
+</body>
+</html>
