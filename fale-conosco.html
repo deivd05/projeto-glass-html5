@@ -29,12 +29,12 @@
     </nav>
     </header>
 
-<form>
+<form method="post" id="fcontato" action="mailto:deivdbastos5@gmail.com">
 
 <fieldset id="usuario"><legend>identificação do Usuário</legend>
     <p><label for="cnome">Nome:</label><input type="text" name="tnome" id="cnome" size="20" maxlength="30" placeholder="nome completo"/></p>
-    <p>Senha: <input type="password" name="tsenha" id="csenha" size="8" maxlength="8" placeholder="8digitos"/></p>
-    <p>E-mail:<input type="email" name="tmail" id="cmail" size="20" placeholder="@"/></p>
+    <p><label>Senha:</label> <input type="password" name="tsenha" id="csenha" size="8" maxlength="8" placeholder="8digitos"/></p>
+    <p><label>E-mail:</label><input type="email" name="tmail" id="cmail" size="20" placeholder="@"/></p>
     <fieldset id="sexo"><legend>sexo</legend>
         sexo:
           <input type="radio" name="tsexo"id="cmasc"/><label for="cmasc">Masculino</label>
@@ -46,15 +46,32 @@
 
 <fieldset id="endereco"><legend>endereço do Usuário</legend>
     <p>Logradouro:<input type="text" name="trua" id="crua" size="13"maxlength="80"placeholder="rua,av,travessa ..."/></p>
-    <p>Número:<input type="number" name="tnum" id="cnum"min="0"max="1999"/></p>
-    Estado:
-    Cidade:
+    <p><label>número:</label><input type="number" name="tnum" id="cnum"min="0"max="1999"/></p>
+    <p><label for="cEst">Estado:</label>
+    <select name="tEst" id="cEst">
+        <option value="RJ"selected>Rio de janeiro</option>
+        <option value="SP">São Paulo</option>
+        <option value="MG">Minas Gerais</option>
+        <option value="PR">Paraná</option>
+        <option value="SC">Santa Catarina</option>
+        <option value="RS">Rio Grande do Sul</option>
+    </select></p>
+    <p><label for="ccid">Cidade:</label>
+    <input type="text" name="tcid" id="ccid" maxlength="40" size="20" placeholder="Sua cidade" list="cidades"/></p>
+    <datalist id="cidades">
+        <option value="Rio de Janeiro"></option>
+        <option value="Niteroi"></option>
+        <option value="São gonçalo"></option>
+        <option value="Cabo Frio"></option>
+    </datalist>
 </fieldset>
 
 
 <fieldset id="mensagem"><legend>Mensagem  do Usuário</legend>
-    Grau de Urgência:
-    Mensagem:
+    <p><label for="cUrg">Grau de Urgência:</label>
+    Min<input type="range" name="tUrg" id="cUrg" min="0" max="10" step="2">Max</p>
+    <p><label for="cMsg">Mensagem:</label>
+    <textarea name="tNsg" id="cMsg" cols="45" rows="5" placeholder="Deixe aqui sua mensagem"></textarea></p>
 </fieldset>
 
 <fieldset id="pedido"><legend>Quero um Google Glass</legend>
